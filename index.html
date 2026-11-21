@@ -1,0 +1,365 @@
+﻿<!DOCTYPE html>
+
+<html lang=«ru»>
+
+<head>
+
+<meta charset=«UTF-8»>
+
+<meta name=«viewport» content=«width=device-width, initial-scale=1.0»>
+
+<title>ANSOR 2026</title>
+
+<style>
+
+* {
+
+    margin: 0;
+
+    padding: 0;
+
+    box-sizing: border-box;
+
+}
+
+body {
+
+    background: #071426;
+
+    color: white;
+
+    font-family: Arial, sans-serif;
+
+}
+
+header {
+
+    background: #102744;
+
+    padding: 25px 8%;
+
+    display: flex;
+
+    justify-content: space-between;
+
+    align-items: center;
+
+}
+
+.logo {
+
+    color: gold;
+
+    font-size: 28px;
+
+    font-weight: bold;
+
+}
+
+nav a {
+
+    color: white;
+
+    text-decoration: none;
+
+    margin-left: 20px;
+
+}
+
+.hero {
+
+    min-height: 90vh;
+
+    display: flex;
+
+    justify-content: center;
+
+    align-items: center;
+
+    gap: 50px;
+
+    padding: 50px;
+
+    flex-wrap: wrap;
+
+}
+
+.hero img {
+
+    width: 350px;
+
+    max-width: 100%;
+
+    border-radius: 20px;
+
+    border: 3px solid gold;
+
+}
+
+.content {
+
+    max-width: 550px;
+
+}
+
+h1 {
+
+    font-size: 55px;
+
+    margin-bottom: 20px;
+
+}
+
+.gold {
+
+    color: gold;
+
+}
+
+p {
+
+    font-size: 19px;
+
+    line-height: 1.8;
+
+    color: #cbd5e1;
+
+}
+
+button {
+
+    margin-top: 25px;
+
+    padding: 17px 30px;
+
+    background: gold;
+
+    color: #071426;
+
+    border: none;
+
+    border-radius: 8px;
+
+    font-size: 16px;
+
+    font-weight: bold;
+
+    cursor: pointer;
+
+}
+
+button:hover {
+
+    background: white;
+
+    transform: scale(1.05);
+
+}
+
+section {
+
+    padding: 80px 10%;
+
+    text-align: center;
+
+}
+
+section h2 {
+
+    color: gold;
+
+    font-size: 38px;
+
+    margin-bottom: 30px;
+
+}
+
+.card {
+
+    background: #102744;
+
+    padding: 30px;
+
+    margin: 20px auto;
+
+    max-width: 800px;
+
+    border-radius: 15px;
+
+    border: 1px solid #c9a75b;
+
+}
+
+footer {
+
+    text-align: center;
+
+    padding: 30px;
+
+    background: #030b16;
+
+    color: gold;
+
+}
+
+@media(max-width:700px) {
+
+    .hero {
+
+        text-align: center;
+
+    }
+
+    h1 {
+
+        font-size: 40px;
+
+    }
+
+    header {
+
+        flex-direction: column;
+
+        gap: 15px;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+<header>
+
+    <div class=«logo»>ANSOR 2026</div>
+
+    <nav>
+
+        <a href=«#about»>Обо мне</a>
+
+        <a href=«#goals»>Цели</a>
+
+        <a href=«#vote»>Поддержка</a>
+
+    </nav>
+
+</header>
+
+<div class=«hero»>
+
+    <img src=«ansor.jpg» alt=«Ансор Арифханов»>
+
+    <div class=«content»>
+
+        <h1>ГОЛОСУЙ ЗА <span class=«gold»>АНСОРА!</span></h1>
+
+        <p>
+
+            Ансор Арифханов — кандидат
+
+            в Министерство школьного управления.
+
+            Я хочу сделать нашу школу ещё лучше!
+
+        </p>
+
+        <button onclick=«document.getElementById(‘vote’).scrollIntoView({behavior:’smooth’})»>
+
+            МОЯ ПРОГРАММА →
+
+        </button>
+
+    </div>
+
+</div>
+
+<section id=«about»>
+
+    <h2>ОБО МНЕ</h2>
+
+    <div class=«card»>
+
+        <p>
+
+            Меня зовут Ансор Арифханов.
+
+            Я ученик, который хочет принимать
+
+            активное участие в жизни школы.
+
+            Я ценю ответственность, уважение,
+
+            справедливость и командную работу.
+
+            Я готов слушать идеи учеников,
+
+            помогать воплощать интересные проекты
+
+            и работать ради общего результата.
+
+        </p>
+
+    </div>
+
+</section>
+
+<section id=«goals»>
+
+    <h2>МОИ ЦЕЛИ</h2>
+
+    <div class=«card»>
+
+        <h3>🤝 Дружная школа</h3>
+
+        <p>Больше взаимопомощи и уважения между учениками.</p>
+
+    </div>
+
+    <div class=«card»>
+
+        <h3>💡 Новые идеи</h3>
+
+        <p>Интересные мероприятия и школьные проекты.</p>
+
+    </div>
+
+    <div class=«card»>
+
+        <h3>🎓 Развитие</h3>
+
+        <p>Возможности для раскрытия талантов учеников.</p>
+
+    </div>
+
+    <div class=«card»>
+
+        <h3>⭐ Ответственность</h3>
+
+        <p>Внимательно относиться к предложениям учеников.</p>
+
+    </div>
+
+</section>
+
+<section id=«vote»>
+
+    <h2>ТВОЙ ГОЛОС ИМЕЕТ ЗНАЧЕНИЕ!</h2>
+
+    <p>
+
+        Вместе мы можем сделать школьную жизнь
+
+        интереснее, ярче и лучше!
+
+    </p>
+
+    <button onclick=«alert(‘Спасибо за поддержку! ANSOR 2026 ⭐’)»>
+
+        ПОДДЕРЖАТЬ АНСОРА!
+
+    </button>
+
+</section>s
